@@ -82,7 +82,7 @@ app.put("/players/:playerId/", async (request, response) => {
 
 //API5
 
-app.delete("/players/:playerId", async (request,response) =.{
+app.delete("/players/:playerId", async (request,response) ={
     const playerId = request.params;
     const deletePlayerQuery = `DELETE FORM cricket_team WHERE player_id = ${playerID};`;
     await db.run(deletePlayerQuery);
